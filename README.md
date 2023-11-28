@@ -1,0 +1,2 @@
+# OpinionSync
+Semestralka
