@@ -1,14 +1,5 @@
-const Layout = ({ children }) => {
-  return (
-    <>
-      <div>
-        <ToolBar />
-        <Sides />
-        <Backdrop />
-      </div>
-      <main>{children}</main>
-    </>
-  );
+const footer = () => {
+  return "footer";
 };
 
-export default Layout;
+export default footer;

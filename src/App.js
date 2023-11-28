@@ -1,27 +1,30 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Layout from "./UI/layout";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./Componenty/home";
+import Login from "./Componenty/login";
 
 function App() {
   return (
-    <div className="flex items-center justify-center">
-      <div class="flex flex-col items-center justify-center w-full sm:w-1/2 h-screen bg-orange-400">
-        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          OpinionSync
-        </h1>
-        <div class="mt-8">
-          <a href="a.html">
-            <button class="bg-blue-500 mr-3 h-16 w-40 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-              a Page
-            </button>
-          </a>
-          <a href="b.html">
-            <button class="bg-blue-500 ml-3 h-16 w-40 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-              b Page
-            </button>
-          </a>
-        </div>
+    <Router>
+      <div className="flex justify-center ">
+        <Layout>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/rooms" element={<Login />} />
+            <Route path="/createRoom" element={<Login />} />
+            <Route path="/description" element={<Login />} />
+            <Route path="/registration" element={<Login />} />
+            <Route path="/account" element={<Login />} />
+            <Route path="/questions" element={<Login />} />
+            <Route path="/discussion" element={<Login />} />
+            <Route path="/results" element={<Login />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </Layout>
       </div>
-    </div>
+    </Router>
   );
 }
 
