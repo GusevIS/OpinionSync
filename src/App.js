@@ -2,9 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import Layout from "./UI/layout";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Componenty/home";
-import Login from "./Componenty/login";
-import Description from "./Componenty/description";
+import Home from "./Components/home";
+import Login from "./Components/login";
+import Description from "./Components/description";
+import Footer from "./UI/footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           </Routes>
         </Layout>
       </div>
+      <Footer/>
     </Router>
   );
 }
