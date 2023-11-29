@@ -4,7 +4,7 @@ import Layout from "./UI/layout";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Componenty/home";
 import Login from "./Componenty/login";
-
+import Account from "./Componenty/account";
 function App() {
   return (
     <Router>
@@ -16,7 +16,7 @@ function App() {
             <Route path="/createRoom" element={<Login />} />
             <Route path="/description" element={<Login />} />
             <Route path="/registration" element={<Login />} />
-            <Route path="/account" element={<Login />} />
+            <Route path="/account" element={<Account />} />
             <Route path="/questions" element={<Login />} />
             <Route path="/discussion" element={<Login />} />
             <Route path="/results" element={<Login />} />
