@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "../UI/button";
 
 const Account = () => {
     return (
@@ -10,32 +11,41 @@ const Account = () => {
     <div style={styles.box_username}>
         <p style={styles.text}>*Username*</p>
     </div>
+           <div className="mt-80 flex flex-row items-center gap-2">
+           <Button to="" className="w-40">
+               Change email
+           </Button>
+               <Button to="" className="w-29">
+                   Change password
+               </Button>
+           </div>
        </>
+
     );
 }
     const styles = {
         box_email: {
-            border: '1px solid #000000',
+            border: '2px solid #000000',
             padding: '15px',
             borderRadius: '5px',
-            backgroundColor: '#000000',
-            width: '300px',
-            margin: '500px',
+            backgroundColor: '#cbd5e1',
+            width: '322px',
+            position: 'relative',
+            top: '300px'
         },
         box_username:
             {
-                border: '1px solid #000000',
+                border: '2px solid #000000',
                 padding: '15px',
                 borderRadius: '5px',
-                backgroundColor: '#000000',
-                width: '300px',
-                margin: '500px',
-                position: 'absolute',
-                top: '150px'
+                backgroundColor: '#cbd5e1',
+                width: '322px',
+                position: 'relative',
+                top: '310px'
 
             },
         text: {
-            color: '#FFFFFF',
+            color: '#000000',
             fontSize: '16px',
             margin: '0',
             textAlign: 'center'
