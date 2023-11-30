@@ -4,6 +4,15 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Components/home";
 import Login from "./Components/login";
 import Description from "./Components/description";
+<<<<<<< HEAD
+=======
+import Footer from "./UI/footer";
+import Login from "./Componenty/login";
+import Account from "./Componenty/account";
+import Description from "./Componenty/description";
+import Registration from "./Componenty/registration";
+import Rooms from "./Componenty/rooms";
+>>>>>>> 3e534def1e3fc56df804f8bf972aa36519e5696e
 
 function App() {
   return (
@@ -12,11 +21,11 @@ function App() {
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/rooms" element={<Login />} />
+            <Route path="/rooms" element={<Rooms />} />
             <Route path="/createRoom" element={<Login />} />
             <Route path="/description" element={<Description />} />
-            <Route path="/registration" element={<Login />} />
-            <Route path="/account" element={<Login />} />
+            <Route path="/registration" element={<Registration />} />
+            <Route path="/account" element={<Account />} />
             <Route path="/questions" element={<Login />} />
             <Route path="/discussion" element={<Login />} />
             <Route path="/results" element={<Login />} />
