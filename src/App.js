@@ -5,9 +5,9 @@ import Home from "./Components/home";
 import Login from "./Components/login";
 import Account from "./Components/account";
 import Description from "./Components/description";
-import Account from "./Components/account";
 import Registration from "./Components/registration";
 import Rooms from "./Components/rooms";
+import Questions from "./Components/questions"
 
 function App() {
   return (
