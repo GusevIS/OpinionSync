@@ -1,8 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Layout from "./UI/layout";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Componenty/home";
+import Home from "./Components/home";
+import Login from "./Components/login";
+import Description from "./Components/description";
+import Footer from "./UI/footer";
 import Login from "./Componenty/login";
 import Account from "./Componenty/account";
 import Description from "./Componenty/description";
@@ -12,7 +14,7 @@ import Rooms from "./Componenty/rooms";
 function App() {
   return (
     <Router>
-      <div className="flex justify-center ">
+      <div className="flex justify-center min-h-screen">
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />} />

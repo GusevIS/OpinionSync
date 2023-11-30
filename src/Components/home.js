@@ -11,7 +11,7 @@ const Home = () => {
         <Button to="/createRoom" className="w-52">
           Vytvořit novou místnost
         </Button>
-        <Button to="/rooms" className="w-52">
+        <Button to="/rooms" className="w-52 ">
           Navštívit místnosti
         </Button>
         <h2 class="mt-5 text-lg font-extrabold leading-none tracking-tight text-gray-900  dark:text-white ">

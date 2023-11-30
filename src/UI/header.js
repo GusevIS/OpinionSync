@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../src/logoOS.png";
 const Header = () => {
   return (
-    <header className="flex justify-between items-center w-full px-3">
+    <header className="flex justify-between items-center w-full px-3 bg-slate-300">
       {/* Logo on the left side */}
       <Link to="/">
         <div className="flex items-center z-50 mix-blend-multiply">
