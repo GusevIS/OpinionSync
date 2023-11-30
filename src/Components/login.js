@@ -3,7 +3,6 @@ import Button from "../UI/button";
 import Card from "../UI/card";
 
 const LoginForm = () => {
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -23,13 +22,6 @@ const LoginForm = () => {
     <form className="space-y-4 p-4 flex items-center flex-col">
       <Card>
         <input
-          type="text"
-          placeholder="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-400 rounded focus:outline-none"
-        />
-        <input
           type="email"
           placeholder="email"
           value={email}
@@ -48,7 +40,7 @@ const LoginForm = () => {
             Log in
           </Button>
           <Button onClick={handleSignIn} className="w-80" to="/registration">
-            Sign in
+            Zaregistrovat se
           </Button>
         </div>
       </Card>

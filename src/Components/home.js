@@ -5,9 +5,6 @@ import Card from "../UI/card";
 const Home = () => {
   return (
     <div>
-      <h1 class="mb-16 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-        OpinionSync
-      </h1>
       <Card>
         <div class="mt-8 flex flex-col items-center gap-4">
           <Button to="/createRoom" className="w-56 ">
