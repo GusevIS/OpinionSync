@@ -4,15 +4,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Components/home";
 import Login from "./Components/login";
 import Description from "./Components/description";
-<<<<<<< HEAD
-=======
 import Footer from "./UI/footer";
-import Login from "./Componenty/login";
-import Account from "./Componenty/account";
-import Description from "./Componenty/description";
-import Registration from "./Componenty/registration";
-import Rooms from "./Componenty/rooms";
->>>>>>> 3e534def1e3fc56df804f8bf972aa36519e5696e
+import Account from "./Components/account";
+import Registration from "./Components/registration";
+import Rooms from "./Components/rooms";
 
 function App() {
   return (
