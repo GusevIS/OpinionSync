@@ -3,6 +3,7 @@ import WhiteButton from "../UI/whiteButton";
 import Button from "../UI/button";
 import Card from "../UI/card";
 import RatingScale from "./Scale/ratingScale";
+import ShareLink from "../UI/shareLink";
 
 const Questions = () => {
   // Placeholder functions for button clicks
@@ -32,11 +33,15 @@ const Questions = () => {
 
       <div className="flex justify-between items-center mb-4">
         <span>Agree</span>
-        <RatingScale maxRating={5} onRatingSelect={handleRatingSelect} />
+        <RatingScale
+          maxRating={5}
+          onRatingSelect={handleRatingSelect}
+          className="mx-2"
+        />
         <span>Disagree</span>
       </div>
 
-      <div className="flex justify-between gap-4">
+      <div className="flex justify-between gap-4 mx-6">
         <WhiteButton to="/questions" onClick={handlePrevious} className="w-28">
           Previous
         </WhiteButton>
@@ -50,6 +55,7 @@ const Questions = () => {
           Next
         </WhiteButton>
       </div>
+      <ShareLink />
     </Card>
   );
 };

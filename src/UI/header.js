@@ -17,9 +17,12 @@ const Header = () => {
       {/* Login on the right side */}
       <div class="relative flex justify-end items-center">
         <div class="absolute w-12 h-12 bg-slate-900 rounded-full"></div>
-        <button class="text-black bg-transparent hover:underline mt-16">
-          <Link to="/login"> Log in </Link>
-        </button>
+        <Link
+          to="/login"
+          className="text-black hover:text-cyan-100 no-underline hover:underline focus:no-underline mt-16 "
+        >
+          Log in
+        </Link>
       </div>
     </header>
   );

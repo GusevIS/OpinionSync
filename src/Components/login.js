@@ -1,12 +1,59 @@
-import { Link } from "react-router-dom";
-const Login = () => {
+import React, { useState } from "react";
+import Button from "../UI/button";
+import Card from "../UI/card";
+
+const LoginForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    console.log("Logging in with:", { name, email, password });
+    // Implement login logic here
+  };
+
+  const handleSignIn = (e) => {
+    e.preventDefault();
+    console.log("Signing in with:", { name, email, password });
+    // Implement sign-in logic here
+  };
+
   return (
-    <div className="">
-      <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-        <Link to="/">login picccooooo</Link>
-      </h1>
-    </div>
+    <form className="space-y-4 p-4 flex items-center flex-col">
+      <Card>
+        <input
+          type="text"
+          placeholder="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-400 rounded focus:outline-none"
+        />
+        <input
+          type="email"
+          placeholder="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-400 rounded focus:outline-none"
+        />
+        <input
+          type="password"
+          placeholder="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="w-full px-4 py-2 border border-gray-400 rounded focus:outline-none"
+        />
+        <div className="flex flex-col space-y-2">
+          <Button onClick={handleLogin} className="w-80" to="/login">
+            Log in
+          </Button>
+          <Button onClick={handleSignIn} className="w-80" to="/registration">
+            Sign in
+          </Button>
+        </div>
+      </Card>
+    </form>
   );
 };
 
-export default Login;
+export default LoginForm;
