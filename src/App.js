@@ -6,6 +6,7 @@ import Home from "./Componenty/home";
 import Login from "./Componenty/login";
 import Account from "./Componenty/account";
 import Description from "./Componenty/description";
+import Registration from "./Componenty/registration";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             <Route path="/rooms" element={<Login />} />
             <Route path="/createRoom" element={<Login />} />
             <Route path="/description" element={<Description />} />
-            <Route path="/registration" element={<Login />} />
+            <Route path="/registration" element={<Registration />} />
             <Route path="/account" element={<Account />} />
             <Route path="/questions" element={<Login />} />
             <Route path="/discussion" element={<Login />} />
