@@ -7,6 +7,7 @@ import Login from "./Componenty/login";
 import Account from "./Componenty/account";
 import Description from "./Componenty/description";
 import Registration from "./Componenty/registration";
+import Rooms from "./Componenty/rooms";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/rooms" element={<Login />} />
+            <Route path="/rooms" element={<Rooms />} />
             <Route path="/createRoom" element={<Login />} />
             <Route path="/description" element={<Description />} />
             <Route path="/registration" element={<Registration />} />
