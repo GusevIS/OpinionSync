@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
@@ -10,10 +9,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const Rooms = () => {
     return (
         <>
-            <Container className="mt-5">
+            <Container className="mt-5 ">
                 <Row>
                     <Col md={20}>
-                        <Form className="d-flex">
+                        <Form className="d-flex mt-5 mb-5">
                             <Form.Control
                                 type="search"
                                 placeholder="Search"
@@ -28,8 +27,7 @@ const Rooms = () => {
                 </Row>
             </Container>
 
-
-
+<div style={{height: '200px', overflowY: 'auto'}}>
 
             <InputGroup className="mb-3">
                 <Form.Control
@@ -37,7 +35,6 @@ const Rooms = () => {
                     aria-label="Room1"
                     aria-describedby="basic-addon1"
                     readonly="true"
-
                 />
             </InputGroup>
 
@@ -80,8 +77,7 @@ const Rooms = () => {
                 />
             </InputGroup>
 
-
-
+</div>
     <Container className="mt-5">
         <Row>
             <Col md={20}>

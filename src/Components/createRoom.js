@@ -65,7 +65,7 @@ const RoomCreationForm = () => {
               id="privacy-switch"
               offColor="#888"
               onColor="#4C51BF"
-              handleDiameter={50}
+              handleDiameter={24}
               height={28}
               width={50}
               className="react-switch flex "
