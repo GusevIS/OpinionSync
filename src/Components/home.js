@@ -2,14 +2,16 @@ import { Link } from "react-router-dom";
 import Button from "../UI/button";
 import "../App.css";
 import PrimaryButtons from "./buttons/primaryButton";
+import TextButtons from "./buttons/textButton";
+import React, { useRef } from 'react';
 
-const Home = () => {
+const Home = ({ scrollToDescPage }) => {
     const linkStyle = {
         textDecoration: 'none', // Убираем подчеркивание у ссылки
         color: 'inherit', // Сохраняем цвет текста по умолчанию
     };
   return (
-    <div className="App">
+    <div className="App pb-40">
       <h1 className="font-h1 pt-10">
         OpinionSync
       </h1>
@@ -20,9 +22,10 @@ const Home = () => {
           <PrimaryButtons buttonText="Navštívit místnosti" to="rooms" customWidth="416px" customHeight="64px">
               {}
           </PrimaryButtons>
-        <h2 class="default-text mt-16 ">
-          <Link to="/description" style={linkStyle}>Jak to celé funguje?</Link>
-        </h2>
+
+          <TextButtons buttonText="Jak to celé funguje?" onClick={scrollToDescPage} my-25>
+              {}
+          </TextButtons>
       </div>
     </div>
   );

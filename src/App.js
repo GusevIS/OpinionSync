@@ -8,6 +8,7 @@ import Footer from "./UI/footer";
 import Account from "./Components/account";
 import Registration from "./Components/registration";
 import Rooms from "./Components/rooms";
+import ScrollPage from "./Components/scrollPage";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <div className="app-global">
         <Layout>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<ScrollPage />} />
+            <Route exact path="/home" element={<Home />} />
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/createRoom" element={<Login />} />
             <Route path="/description" element={<Description />} />

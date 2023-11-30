@@ -10,16 +10,16 @@ export function Footer() {
         color: '#0A2440'
     };
   return (
-      <footer className="footer p-8">
+      <footer className="footer p-3">
         <div className="footer-list-container">
           <ul className="footer-list">
             <li>
               <Typography
                   as="a"
-                  href="#"
+                  href="/"
                   textDecoration='none'
                   style={linkStyle}
-                  className="text-center font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                  className="text-center"
               >
                 Home
               </Typography>
@@ -27,9 +27,9 @@ export function Footer() {
             <li>
               <Typography
                   as="a"
-                  href="#"
+                  href="/"
                   style={linkStyle}
-                  className="text-center font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                  className="text-center"
               >
                 About us
               </Typography>
@@ -39,14 +39,14 @@ export function Footer() {
                   as="a"
                   href="#"
                   style={linkStyle}
-                  className="text-center font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                  className="text-center"
               >
                 FAQ
               </Typography>
             </li>
           </ul>
         </div>
-        <hr className="hr my-3" />
+        <hr className="hr mt-1" />
         <Typography color='#EF7068' className="small-text text-center font-normal">
           &copy; 2023 OpinionSync
         </Typography>
