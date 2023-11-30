@@ -3,12 +3,12 @@ import Button from "../UI/button";
 
 const Home = () => {
   return (
-    <div className="">
+    <div>
       <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
         OpinionSync
       </h1>
       <div class="mt-28 flex flex-col items-center gap-4">
-        <Button to="/createRoom" className="w-52">
+        <Button to="/questions" className="w-52">
           Vytvořit novou místnost
         </Button>
         <Button to="/rooms" className="w-52 ">

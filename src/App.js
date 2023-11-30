@@ -3,16 +3,11 @@ import Layout from "./UI/layout";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Components/home";
 import Login from "./Components/login";
+import Account from "./Components/account";
 import Description from "./Components/description";
-<<<<<<< HEAD
-=======
-import Footer from "./UI/footer";
-import Login from "./Componenty/login";
-import Account from "./Componenty/account";
-import Description from "./Componenty/description";
-import Registration from "./Componenty/registration";
-import Rooms from "./Componenty/rooms";
->>>>>>> 3e534def1e3fc56df804f8bf972aa36519e5696e
+import Registration from "./Components/registration";
+import Rooms from "./Components/rooms";
+import Questions from "./Components/questions";
 
 function App() {
   return (
@@ -26,7 +21,7 @@ function App() {
             <Route path="/description" element={<Description />} />
             <Route path="/registration" element={<Registration />} />
             <Route path="/account" element={<Account />} />
-            <Route path="/questions" element={<Login />} />
+            <Route path="/questions" element={<Questions />} />
             <Route path="/discussion" element={<Login />} />
             <Route path="/results" element={<Login />} />
             <Route path="/login" element={<Login />} />
