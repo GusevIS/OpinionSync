@@ -12,7 +12,7 @@ import Rooms from "./Components/rooms";
 function App() {
   return (
     <Router>
-      <div className="flex justify-center min-h-screen">
+      <div className="app-global">
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />} />

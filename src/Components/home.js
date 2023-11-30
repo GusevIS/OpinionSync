@@ -1,21 +1,27 @@
 import { Link } from "react-router-dom";
 import Button from "../UI/button";
+import "../App.css";
+import PrimaryButtons from "./buttons/primaryButton";
 
 const Home = () => {
+    const linkStyle = {
+        textDecoration: 'none', // Убираем подчеркивание у ссылки
+        color: 'inherit', // Сохраняем цвет текста по умолчанию
+    };
   return (
-    <div className="">
-      <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+    <div className="App">
+      <h1 className="font-h1 pt-10">
         OpinionSync
       </h1>
-      <div class="mt-28 flex flex-col items-center gap-4">
-        <Button to="/createRoom" className="w-52">
-          Vytvořit novou místnost
-        </Button>
-        <Button to="/rooms" className="w-52 ">
-          Navštívit místnosti
-        </Button>
-        <h2 class="mt-5 text-lg font-extrabold leading-none tracking-tight text-gray-900  dark:text-white ">
-          <Link to="/description">Jak to celé funguje?</Link>
+      <div class="mt-20 flex flex-col items-center gap-4">
+          <PrimaryButtons buttonText="Vytvořit novou místnost" to="createRoom" customWidth="416px" customHeight="64px">
+              {}
+          </PrimaryButtons>
+          <PrimaryButtons buttonText="Navštívit místnosti" to="rooms" customWidth="416px" customHeight="64px">
+              {}
+          </PrimaryButtons>
+        <h2 class="default-text mt-16 ">
+          <Link to="/description" style={linkStyle}>Jak to celé funguje?</Link>
         </h2>
       </div>
     </div>

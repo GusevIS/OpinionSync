@@ -1,24 +1,30 @@
 import { Link } from "react-router-dom";
-import logo from "../../src/logoOS.png";
+import logo from "../../src/OSLogo.png";
+import "../styles/Header.css";
+
 const Header = () => {
+    const linkStyle = {
+        textDecoration: 'none',
+        color: 'inherit',
+    };
   return (
-    <header className="flex justify-between items-center w-full px-3 bg-slate-300">
+    <header className="header px-4 bg-slate-300">
       {/* Logo on the left side */}
       <Link to="/">
         <div className="flex items-center z-50 mix-blend-multiply">
           <img
             src={logo}
             alt="Opinion Sync Logo"
-            className="w-12 h-12 mix-blend-multiply"
+            className="w-36 h-36 mix-blend-multiply"
           />
         </div>
       </Link>
 
       {/* Login on the right side */}
-      <div class="relative flex justify-end items-center">
-        <div class="absolute w-12 h-12 bg-slate-900 rounded-full"></div>
-        <button class="text-black bg-transparent hover:underline mt-16">
-          <Link to="/login"> Log in </Link>
+      <div className="relative text-center">
+        <div className="border-circle absolute"></div>
+        <button className="small-text mt-16 py-1 relative">
+          <Link to="/login" style={linkStyle} > Log in </Link>
         </button>
       </div>
     </header>
@@ -26,3 +32,4 @@ const Header = () => {
 };
 
 export default Header;
+
