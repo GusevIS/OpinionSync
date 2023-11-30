@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Layout from "./UI/layout";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -10,7 +9,7 @@ import Footer from "./UI/footer";
 function App() {
   return (
     <Router>
-      <div className="flex justify-center ">
+      <div className="flex justify-center min-h-screen">
         <Layout>
           <Routes>
             <Route exact path="/" element={<Home />} />
@@ -26,7 +25,6 @@ function App() {
           </Routes>
         </Layout>
       </div>
-      <Footer/>
     </Router>
   );
 }
