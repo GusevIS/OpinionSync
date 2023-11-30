@@ -5,11 +5,9 @@ import Home from "./Components/home";
 import Login from "./Components/login";
 import Description from "./Components/description";
 import Footer from "./UI/footer";
-import Login from "./Componenty/login";
-import Account from "./Componenty/account";
-import Description from "./Componenty/description";
-import Registration from "./Componenty/registration";
-import Rooms from "./Componenty/rooms";
+import Account from "./Components/account";
+import Registration from "./Components/registration";
+import Rooms from "./Components/rooms";
 
 function App() {
   return (
