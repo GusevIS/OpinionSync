@@ -7,7 +7,7 @@ import Account from "./Components/account";
 import Description from "./Components/description";
 import Registration from "./Components/registration";
 import Rooms from "./Components/rooms";
-import Questions from "./Components/questions"
+import Questions from "./Components/questions";
 
 function App() {
   return (

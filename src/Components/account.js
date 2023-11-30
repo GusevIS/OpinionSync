@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import Button from "../UI/button";
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Account = () => {
     return (
@@ -20,7 +18,7 @@ const Account = () => {
     <div style={styles.box_username}>
         <p style={styles.text}>*Username*</p>
     </div>
-           <div className="mt-52 flex flex-row items-center gap-2">
+           <div className="mt-40 flex flex-row gap-2">
            <Button to="" className="w-40">
                Change email
            </Button>
@@ -40,7 +38,7 @@ const Account = () => {
             backgroundColor: '#cbd5e1',
             width: '322px',
             position: 'relative',
-            top: '190px'
+            top: '50px'
         },
         box_username:
             {
@@ -50,7 +48,7 @@ const Account = () => {
                 backgroundColor: '#cbd5e1',
                 width: '322px',
                 position: 'relative',
-                top: '200px'
+                top: '60px'
 
             },
         text: {
@@ -70,8 +68,8 @@ const Account = () => {
             height: '300px',
             width: '220px',
             position: 'relative',
-            left: '43px',
-            top: '250px'
+            left: '45px',
+            top: '150px'
         }
     }
 export default Account;
