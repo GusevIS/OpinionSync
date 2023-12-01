@@ -1,23 +1,32 @@
 import { Link } from "react-router-dom";
 import Button from "../UI/button";
-import Card from "../UI/card";
+import "../App.css";
+import PrimaryButtons from "./buttons/primaryButton";
+import TextButtons from "./buttons/textButton";
+import React, { useRef } from 'react';
 
-const Home = () => {
+const Home = ({ scrollToDescPage }) => {
+    const linkStyle = {
+        textDecoration: 'none', // Убираем подчеркивание у ссылки
+        color: 'inherit', // Сохраняем цвет текста по умолчанию
+    };
   return (
-    <div>
-      <Card>
-        <div class="mt-8 flex flex-col items-center gap-4">
-          <Button to="/createRoom" className="w-56 ">
-            Vytvořit novou místnost
-          </Button>
-          <Button to="/rooms" className="w-56 ">
-            Navštívit místnosti
-          </Button>
-          <h2 class="mt-5 text-lg font-extrabold leading-none tracking-tight text-gray-900  dark:text-white ">
-            <Link to="/description">Jak to celé funguje?</Link>
-          </h2>
-        </div>
-      </Card>
+    <div className="App pb-40">
+      <h1 className="font-h1 pt-10">
+        OpinionSync
+      </h1>
+      <div class="mt-20 flex flex-col items-center gap-4">
+          <PrimaryButtons buttonText="Vytvořit novou místnost" to="createRoom" customWidth="416px" customHeight="64px">
+              {}
+          </PrimaryButtons>
+          <PrimaryButtons buttonText="Navštívit místnosti" to="rooms" customWidth="416px" customHeight="64px">
+              {}
+          </PrimaryButtons>
+
+          <TextButtons buttonText="Jak to celé funguje?" onClick={scrollToDescPage} my-25>
+              {}
+          </TextButtons>
+      </div>
     </div>
   );
 };

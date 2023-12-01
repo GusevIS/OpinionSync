@@ -1,38 +1,35 @@
 import { Link } from "react-router-dom";
-import logo from "../../src/logoOS.png";
-import Button from "./button";
-import { useLocation } from "react-router-dom";
+import logo from "../../src/OSLogo.png";
+import "../styles/Header.css";
 
 const Header = () => {
-  const location = useLocation();
-  const currentPath = location.pathname;
-
+    const linkStyle = {
+        textDecoration: 'none',
+        color: 'inherit',
+    };
   return (
-    <header className="flex w-full justify-between items-center px-3 bg-slate-300  ">
+    <header className="header px-4 bg-slate-300">
       {/* Logo on the left side */}
-      <div className="flex justify-start flex-1 z-50 mix-blend-multiply">
-        <Link to="/">
+      <Link to="/">
+        <div className="flex items-center z-50 mix-blend-multiply">
           <img
             src={logo}
             alt="Opinion Sync Logo"
-            className="w-12 h-12 mix-blend-multiply"
+            className="w-36 h-36 mix-blend-multiply"
           />
-        </Link>
-      </div>
+        </div>
+      </Link>
 
-      <h1 class="flex items-center mt-6 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-        OpinionSync
-      </h1>
       {/* Login on the right side */}
-      <div className="flex flex-1 justify-end">
-        {currentPath === "/" ? (
-          <Button to="/login">Přihlásit ses</Button>
-        ) : (
-          <Button to="/">Domů</Button>
-        )}
+      <div className="relative text-center">
+        <div className="border-circle absolute"></div>
+        <button className="small-text mt-16 py-1 relative">
+          <Link to="/login" style={linkStyle} > Log in </Link>
+        </button>
       </div>
     </header>
   );
 };
 
 export default Header;
+
