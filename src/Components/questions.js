@@ -1,9 +1,8 @@
 import React from "react";
-import WhiteButton from "../UI/whiteButton";
-import Button from "../UI/button";
 import Card from "../UI/card";
 import RatingScale from "./Scale/ratingScale";
 import ShareLink from "../UI/shareLink";
+import PrimaryButtons from "./buttons/primaryButton";
 
 const Questions = () => {
   // Placeholder functions for button clicks
@@ -27,33 +26,33 @@ const Questions = () => {
   return (
     <Card>
       <div className="text-center mb-4">
-        <h1 className="text-xl font-bold">Jméno dotazníku</h1>
-        <p>Text otázky</p>
+        <h1 className="default-text mb-8" >Název místnosti</h1>
+        <p className="small-text">Text otázky</p>
       </div>
 
       <div className="flex justify-between items-center mb-4">
-        <span>Agree</span>
+        <span className="small-text">Agree</span>
         <RatingScale
           maxRating={5}
           onRatingSelect={handleRatingSelect}
           className="mx-2"
         />
-        <span>Disagree</span>
+        <span className="small-text">Disagree</span>
       </div>
 
       <div className="flex justify-between gap-4 mx-6">
-        <WhiteButton to="/questions" onClick={handlePrevious} className="w-28">
-          Previous
-        </WhiteButton>
         {/* <button
           className="bg-black text-white py-2 px-4 rounded shadow"
           onClick={handleOk}
         >
           Ok
         </button> */}
-        <WhiteButton to="/questions" onClick={handleNext} className="w-28">
-          Next
-        </WhiteButton>
+          <PrimaryButtons onClick={handlePrevious} buttonText="Previous" to="/questions" customWidth="144px" customHeight="64px">
+              {}
+          </PrimaryButtons>
+          <PrimaryButtons buttonText="Next" to="/questions" customWidth="144px" customHeight="64px">
+              {}
+          </PrimaryButtons>
       </div>
       <ShareLink />
     </Card>

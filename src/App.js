@@ -1,10 +1,8 @@
-// import "./App.css";
 import Layout from "./UI/layout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/home";
 import Login from "./Components/login";
 import Description from "./Components/description";
-import Footer from "./UI/footer";
 import Account from "./Components/account";
 import Registration from "./Components/registration";
 import Rooms from "./Components/rooms";

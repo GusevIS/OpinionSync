@@ -1,9 +1,12 @@
-import Button from "../UI/button";
 import Card from "../UI/card";
 import ShareLink from "../UI/shareLink";
 import Switch from "react-switch";
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 import React, { useState } from "react";
+import BasicTextFields from "./textFields/outlinedTextField";
+import ContainedButton from "./buttons/containedButton";
 
 const RoomCreationForm = () => {
   const [roomName, setRoomName] = useState("");
@@ -36,40 +39,39 @@ const RoomCreationForm = () => {
   return (
     <Card>
       <div className="mb-4 mx-6">
-        <label
-          className="block text-gray-700 text-sm font-bold mb-2"
-          htmlFor="roomName"
-        >
-          Room Name
-        </label>
-        <div className="flex flex-col">
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="roomName"
-            type="text"
-            placeholder="Room name"
-            value={roomName}
-            onChange={(e) => setRoomName(e.target.value)}
-          />
+
+        <div className="flex flex-col mt-8">
+          <BasicTextFields onChange={(e) => setRoomName(e.target.value)} label="Room name" value={roomName} customWidth="416px" customHeight="56px">
+            {}
+          </BasicTextFields>
+          {/*<input*/}
+          {/*  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"*/}
+          {/*  id="roomName"*/}
+          {/*  type="text"*/}
+          {/*  placeholder="Room name"*/}
+          {/*  value={roomName}*/}
+          {/*  onChange={(e) => setRoomName(e.target.value)}*/}
+          {/*/>*/}
 
           <div
             htmlFor="privacy-switch"
-            className="flex ml-1 flex-col gap-1 justify-start"
+            className="flex ml-1 flex-column gap-1 items-center justify-center mt-12"
           >
-            <p className="text-sm text-gray-600 m-0 mt-1">
-              {isPrivate ? "Private" : "Public"}
-            </p>
+
             <Switch
               onChange={handleToggle}
               checked={isPrivate}
               id="privacy-switch"
-              offColor="#888"
-              onColor="#4C51BF"
+              offColor="#EF7068"
+              onColor="#28954E"
               handleDiameter={24}
               height={28}
               width={50}
               className="react-switch flex "
             />
+            <p className="small-text">
+              {isPrivate ? "Private" : "Public"}
+            </p>
           </div>
         </div>
       </div>
@@ -78,27 +80,30 @@ const RoomCreationForm = () => {
           <div className="flex flex-row">
             {questions.length > 1 && (
               <button onClick={() => removeQuestion(index)} className="mr-2">
-                {/* Replace with minus icon */}➖
+                <RemoveIcon fontSize="large" style={{ color: '#EF7068' }}></RemoveIcon>
               </button>
             )}
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              type="text"
-              placeholder="Enter a question"
-              value={question}
-              onChange={(e) => handleQuestionChange(index, e.target.value)}
-            />
+            <BasicTextFields label="Enter a question" customWidth="824px" customHeight="56px">
+              {}
+            </BasicTextFields>
+            {/*<input*/}
+            {/*  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"*/}
+            {/*  type="text"*/}
+            {/*  placeholder="Enter a question"*/}
+            {/*  value={question}*/}
+            {/*  onChange={(e) => handleQuestionChange(index, e.target.value)}*/}
+            {/*/>*/}
           </div>
           {index === questions.length - 1 && (
-            <button onClick={addQuestion} className="mt-4">
-              {/* Replace with plus icon */}➕
+            <button onClick={addQuestion} className="mt-4 mb-8">
+              <AddIcon fontSize="large" style={{ color: '#28954E' }}></AddIcon>
             </button>
           )}
         </div>
       ))}
-      <Button onClick={handleCreateRoom} to="/questions" className="mt-0">
-        Create
-      </Button>
+      <ContainedButton onClick={handleCreateRoom} buttonText="Create" to="/questions" customWidth="416px" customHeight="56px">
+        {}
+      </ContainedButton>
       <ShareLink />
     </Card>
   );
