@@ -25,9 +25,10 @@ const Questions = () => {
 
   return (
     <Card>
-      <div className="text-center mb-4">
+      <div className="text-center mb-4" style={{ minWidth: '640px', textAlign: 'center'}}>
         <h1 className="default-text mb-8" >Název místnosti</h1>
-        <p className="small-text">Text otázky</p>
+        <p style={{ maxWidth: '640px', wordWrap: 'break-word', margin: '0 auto' }}>
+            Všichni sdílíme stejnou realitu a interpretujeme ji pouze jinak</p>
       </div>
 
       <div className="flex justify-between items-center mb-4">
@@ -47,13 +48,18 @@ const Questions = () => {
         >
           Ok
         </button> */}
-          <PrimaryButtons onClick={handlePrevious} buttonText="Previous" to="/questions" customWidth="144px" customHeight="64px">
+          <PrimaryButtons onClick={handlePrevious} buttonText="předchozí" to="/questions" customWidth="144px" customHeight="64px">
               {}
           </PrimaryButtons>
-          <PrimaryButtons buttonText="Next" to="/questions" customWidth="144px" customHeight="64px">
+
+          <PrimaryButtons buttonText="další" to="/questions" customWidth="144px" customHeight="64px">
               {}
           </PrimaryButtons>
       </div>
+        <PrimaryButtons buttonText="Výsledky" to="/results" customWidth="312px" customHeight="64px">
+            {}
+        </PrimaryButtons>
+
       <ShareLink />
     </Card>
   );

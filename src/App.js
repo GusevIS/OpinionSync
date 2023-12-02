@@ -9,6 +9,7 @@ import Rooms from "./Components/rooms";
 import Questions from "./Components/questions";
 import CreateRoom from "./Components/createRoom";
 import ScrollPage from "./Components/scrollPage";
+import Results from "./Components/results";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <Route path="/account" element={<Account />} />
             <Route path="/questions" element={<Questions />} />
             <Route path="/discussion" element={<Login />} />
-            <Route path="/results" element={<Login />} />
+            <Route path="/results" element={<Results />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </Layout>
