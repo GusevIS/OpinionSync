@@ -10,6 +10,7 @@ import Questions from "./Components/questions";
 import CreateRoom from "./Components/createRoom";
 import ScrollPage from "./Components/scrollPage";
 import Results from "./Components/results";
+import Discussion from "./Components/discussion"
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <Route path="/registration" element={<Registration />} />
             <Route path="/account" element={<Account />} />
             <Route path="/questions" element={<Questions />} />
-            <Route path="/discussion" element={<Login />} />
+            <Route path="/discussion" element={<Discussion />} />
             <Route path="/results" element={<Results />} />
             <Route path="/login" element={<Login />} />
           </Routes>
