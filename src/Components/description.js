@@ -1,10 +1,8 @@
 const Description = () => {
   return (
-    <div className="flex  items-center flex-col ">
-      <h2 class="font-h2 mb-2 mt-20">
-        Popis funkčnosti
-      </h2>
-      <p className="small-text text-justify mx-44 mt-5">
+    <div className="flex  items-center flex-col w-full ">
+      <h2 class="font-h2 mb-2 mt-20">Popis funkčnosti</h2>
+      <p className="small-text text-justify mx-4 sm:mx-44 mt-5">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
         mollitia, molestiae quas vel sint commodi repudiandae consequuntur
         voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -88,14 +86,10 @@ const Description = () => {
         quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas.
       </p>
 
-      <h2 id="about_us" className="font-h2 mb-2 mt-20" >
+      <h2 id="about_us" className="font-h2 mb-2 mt-20">
         O nás
       </h2>
-      <p className="small-text text-justify mx-44 mt-5">
-          qwe
-      </p>
     </div>
-
   );
 };
 

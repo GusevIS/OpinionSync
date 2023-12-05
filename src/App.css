@@ -13,6 +13,10 @@
   }
 }
 
+* {
+  border: 1px solid red;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -42,39 +46,37 @@
   min-height: 100vh;
   justify-content: center;
   display: flex;
-  background-color: #F8F7F3;
+  background-color: #f8f7f3;
 }
 
 .app-div {
-  background-color: #F8F7F3;
+  background-color: #f8f7f3;
 }
 
 .font-h1 {
-  font-family: 'Sen', sans-serif;
-  color: #0A2440;
+  font-family: "Sen", sans-serif;
+  color: #0a2440;
   font-weight: bold;
   font-size: 4.2rem;
 }
 
 .font-h2 {
-  font-family: 'Sen', sans-serif;
-  color: #0A2440;
+  font-family: "Sen", sans-serif;
+  color: #0a2440;
   font-weight: normal;
   font-size: 3.2rem;
 }
 
 .default-text {
-  font-family: 'Sen', sans-serif;
-  color: #0A2440;
+  font-family: "Sen", sans-serif;
+  color: #0a2440;
   font-weight: bold;
   font-size: 2rem;
 }
 
-
-
 .small-text {
-  font-family: 'Sen', sans-serif;
-  color: #0A2440;
+  font-family: "Sen", sans-serif;
+  color: #0a2440;
   font-weight: normal;
   font-size: 1rem;
 }
