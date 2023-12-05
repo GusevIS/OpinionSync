@@ -20,7 +20,7 @@ const Header = () => {
         </Link>
       </div>
 
-      <h1 class="flex items-center mt-6 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+      <h1 class="flex items-center mt-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
         OpinionSync
       </h1>
       {/* Login on the right side */}
