@@ -22,7 +22,7 @@ const Registration = () => {
                   {}
               </BasicTextFields>
 
-              <ContainedButton buttonText="Log up" to="/login" customWidth="416px" customHeight="56px">
+              <ContainedButton buttonText="Sign up" to="/login" customWidth="416px" customHeight="56px">
                   {}
               </ContainedButton>
           </div>
