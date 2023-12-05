@@ -3,10 +3,10 @@ import logo from "../../src/OSLogo.png";
 import "../styles/Header.css";
 
 const Header = () => {
-    const linkStyle = {
-        textDecoration: 'none',
-        color: 'inherit',
-    };
+  const linkStyle = {
+    textDecoration: "none",
+    color: "inherit",
+  };
   return (
     <header className="header px-4 bg-slate-300">
       {/* Logo on the left side */}
@@ -24,7 +24,10 @@ const Header = () => {
       <div className="relative text-center">
         <div className="border-circle absolute"></div>
         <button className="small-text mt-16 py-1 relative">
-          <Link to="/login" style={linkStyle} > Log in </Link>
+          <Link to="/login" style={linkStyle}>
+            {" "}
+            Log in{" "}
+          </Link>
         </button>
       </div>
     </header>
@@ -32,4 +35,3 @@ const Header = () => {
 };
 
 export default Header;
-
