@@ -29,7 +29,7 @@ const LoginForm = () => {
             {}
           </BasicTextFields>
 
-          <ContainedButton onClick={handleLogin} buttonText="Sign in" to="/login" customWidth="416px" customHeight="56px">
+          <ContainedButton onClick={handleLogin} buttonText="Log in" to="/account" customWidth="416px" customHeight="56px">
             {}
           </ContainedButton>
           <ContainedButton buttonText="Sign up" to="/registration" customWidth="416px" customHeight="56px">

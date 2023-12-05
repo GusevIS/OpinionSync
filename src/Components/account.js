@@ -28,10 +28,10 @@ const Account = () => {
 
         </div>
         <div className="mt-3 flex flex-row gap-2">
-          <PrimaryButtons buttonText="Změnit jméno" customWidth="244px" customHeight="64px">
+          <PrimaryButtons buttonText="Change name" customWidth="244px" customHeight="64px">
             {}
           </PrimaryButtons>
-          <PrimaryButtons buttonText="Změnit email" customWidth="244px" customHeight="64px">
+          <PrimaryButtons buttonText="Change email" customWidth="244px" customHeight="64px">
             {}
           </PrimaryButtons>
         </div>
