@@ -28,7 +28,7 @@ const StyledTable = styled(Table)({
 export default function ResultsTable() {
     return (
         <TableContainer>
-            <StyledTable sx={{ Width: 1124 }} aria-label="simple table">
+            <StyledTable sx={{ Width: '100%' }} aria-label="simple table">
                 <TableBody>
                     {rows.map((row) => (
                         <TableRow
