@@ -89,7 +89,7 @@ const Description = () => {
       </p>
 
       <h2 id="about_us" className="font-h2 mb-2 mt-20" >
-        O nás
+        Tento projekt byl vytvořen v rámci předmětu "Internetové technologie".
       </h2>
       <p className="small-text text-justify mx-44 mt-5">
           qwe
