@@ -1,11 +1,13 @@
 import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
-import Button from "../UI/button";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "../UI/card";
+import ContainedButton from "./buttons/containedButton";
+import React from "react";
+import BasicTextFields from "./textFields/outlinedTextField";
+import OutlinedButtonBlack from "./buttons/outlinedButtonBlack";
 
 const Rooms = () => {
   return (
@@ -14,78 +16,66 @@ const Rooms = () => {
         <Row>
           <Col md={20}>
             <Form className="d-flex mt-3 mb-5">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button>Search</Button>
+              <BasicTextFields label="search" customWidth="416px" customHeight="56px">
+                {}
+              </BasicTextFields>
+              <ContainedButton buttonText="Search" customWidth="178px" customHeight="56px">
+                {}
+              </ContainedButton>
             </Form>
           </Col>
         </Row>
       </Container>
 
       <div
-        style={{ height: "200px", overflowY: "auto" }}
-        className="w-full px-1"
+        style={{ height: "400px", overflowY: "auto" }}
+        className="w-full px-1 grid gap-1"
       >
-        <InputGroup className="mb-3">
-          <Form.Control
-            placeholder="Room1"
-            aria-label="Room1"
-            aria-describedby="basic-addon1"
-            readonly="true"
-          />
-        </InputGroup>
+        <OutlinedButtonBlack buttonText="Room 1" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
+        <OutlinedButtonBlack buttonText="Room 2" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
+        <OutlinedButtonBlack buttonText="Room 3" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
+        <OutlinedButtonBlack buttonText="Room 4" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
+        <OutlinedButtonBlack buttonText="Room 5" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
+        <OutlinedButtonBlack buttonText="Room 6" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
+        <OutlinedButtonBlack buttonText="Room 7" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
+        <OutlinedButtonBlack buttonText="Room 8" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
+        <OutlinedButtonBlack buttonText="Room 9" to="/questions" customWidth="616px" customHeight="54px">
+          {}
+        </OutlinedButtonBlack>
 
-        <InputGroup className="mb-3">
-          <Form.Control
-            placeholder="Room2"
-            aria-label="Room2"
-            aria-describedby="basic-addon1"
-            readonly="true"
-          />
-        </InputGroup>
-
-        <InputGroup className="mb-3">
-          <Form.Control
-            placeholder="Room3"
-            aria-label="Room3"
-            aria-describedby="basic-addon1"
-            readonly="true"
-          />
-        </InputGroup>
-
-        <InputGroup className="mb-3">
-          <Form.Control
-            placeholder="Room4"
-            aria-label="Room4"
-            aria-describedby="basic-addon1"
-            readonly="true"
-          />
-        </InputGroup>
-
-        <InputGroup>
-          <Form.Control
-            placeholder="Room5"
-            aria-label="Room5"
-            aria-describedby="basic-addon1"
-            readonly="true"
-          />
-        </InputGroup>
       </div>
       <Container className="mt-5">
         <Row>
           <Col md={20}>
             <Form className="d-flex">
-              <Form.Control
-                type="insert link"
-                placeholder="insert link..."
-                className="me-2"
-                aria-label="insert link"
-              />
-              <Button>Go!</Button>
+              {/*<Form.Control*/}
+              {/*  type="insert link"*/}
+              {/*  placeholder="insert link..."*/}
+              {/*  className="me-2"*/}
+              {/*  aria-label="insert link"*/}
+              {/*/>*/}
+              <BasicTextFields label="insert link..." customWidth="596px" customHeight="56px">
+                {}
+              </BasicTextFields>
+              <ContainedButton buttonText="Go!" to="/questions" customWidth="56px" customHeight="56px">
+                {}
+              </ContainedButton>
             </Form>
           </Col>
         </Row>

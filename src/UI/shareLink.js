@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 const ShareLink = () => {
   const [link, setLink] = useState("https://example.com"); // Replace with your actual link
@@ -16,7 +17,7 @@ const ShareLink = () => {
   return (
     <div className="flex flex-col items-center space-y-2">
       <hr className="w-full border-t border-gray-800" />
-      <span className="text-sm text-black">Share this question</span>
+      <span className="small-text text-sm text-black">Share this room</span>
       <div className="flex border border-gray-300 rounded overflow-hidden">
         <input
           type="text"
@@ -26,24 +27,16 @@ const ShareLink = () => {
         />
         <button
           onClick={copyToClipboard}
-          className="p-2 bg-gray-200 hover:bg-gray-300"
+          className="p-2"
+          style={{ backgroundColor: '#EF7068', transition: 'background-color 0.3s' }}
         >
           {/* Icon placeholder - replace with actual icon */}
-          <svg
-            className="w-4 h-4 text-gray-600"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M13 5H6v4M4 6h18v12H4z"></path>
-          </svg>
+          <ContentCopyIcon style={{ color: 'white' }}>
+          </ContentCopyIcon>
         </button>
       </div>
       {copySuccess && (
-        <div className="text-sm text-green-500">{copySuccess}</div>
+        <div className="small-text ">{copySuccess}</div>
       )}
     </div>
   );

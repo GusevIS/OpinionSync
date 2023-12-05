@@ -17,9 +17,11 @@ const RatingScale = ({ maxRating = 5, onRatingSelect, className = "" }) => {
         return (
           <button
             key={index}
-            className={`w-6 h-6 rounded-full ${
-              selectedRating === rateValue ? "bg-gray-900" : "bg-gray-500"
-            }`}
+            className={`w-6 h-6 rounded-full`}
+            style={{
+              backgroundColor: selectedRating === rateValue ? '#28954E' : 'white',
+              border: selectedRating === rateValue ? '1px solid #28954E' : '1px solid #0A2440'
+            }}
             onClick={() => handleSetRating(rateValue)}
             aria-label={`Rate ${rateValue}`}
           />

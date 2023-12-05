@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.app-global {
+  text-align: center;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  background-color: #F8F7F3;
+}
+
+.app-div {
+  background-color: #F8F7F3;
+}
+
+.font-h1 {
+  font-family: 'Sen', sans-serif;
+  color: #0A2440;
+  font-weight: bold;
+  font-size: 4.2rem;
+}
+
+.font-h2 {
+  font-family: 'Sen', sans-serif;
+  color: #0A2440;
+  font-weight: normal;
+  font-size: 3.2rem;
+}
+
+.default-text {
+  font-family: 'Sen', sans-serif;
+  color: #0A2440;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+
+.small-text {
+  font-family: 'Sen', sans-serif;
+  color: #0A2440;
+  font-weight: normal;
+  font-size: 1rem;
+}

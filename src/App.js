@@ -1,22 +1,24 @@
-// import "./App.css";
 import Layout from "./UI/layout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/home";
 import Login from "./Components/login";
-import Account from "./Components/account";
 import Description from "./Components/description";
+import Account from "./Components/account";
 import Registration from "./Components/registration";
 import Rooms from "./Components/rooms";
 import Questions from "./Components/questions";
 import CreateRoom from "./Components/createRoom";
+import ScrollPage from "./Components/scrollPage";
+import Results from "./Components/results";
 
 function App() {
   return (
     <Router>
-      <div className="flex justify-center min-h-screen">
+      <div className="app-global">
         <Layout>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<ScrollPage />} />
+            <Route exact path="/home" element={<Home />} />
             <Route path="/rooms" element={<Rooms />} />
             <Route path="/createRoom" element={<CreateRoom />} />
             <Route path="/description" element={<Description />} />
@@ -24,7 +26,7 @@ function App() {
             <Route path="/account" element={<Account />} />
             <Route path="/questions" element={<Questions />} />
             <Route path="/discussion" element={<Login />} />
-            <Route path="/results" element={<Login />} />
+            <Route path="/results" element={<Results />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </Layout>
