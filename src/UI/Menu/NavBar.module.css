@@ -1,0 +1,122 @@
+.NavBar {
+  background: #181818;
+  height: 80px;
+  width: 1920px;
+  /* position: fixed; */
+  z-index: 999;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+
+.NavBar .Logo {
+  position: absolute;
+  left: 3%;
+  top: 5px;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+}
+
+.NavBar .ProfilePic {
+  position: absolute;
+  right: 2%;
+  height: 40px;
+  width: 70px;
+  filter: invert(95%);
+}
+
+.NavBar .Profile {
+  position: absolute;
+  right: 5%;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.NavBar nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 80px;
+  /* margin-top: -12px; */
+  margin-top: 8px;
+  padding: 0;
+}
+
+.NavBar nav ul li {
+  display: inline-block;
+  margin: 1.5vw;
+  transform-origin: center center;
+}
+
+.NavBar nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.NavBar a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  /* border-bottom: 5px solid #8c1cd1;  */
+}
+
+.NavBar .MobileNavigation {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .NavBar .Navigation {
+    display: none;
+  }
+
+  .NavBar {
+    position: fixed;
+    width: 100%;
+  }
+  .NavBar .MobileNavigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .Logo {
+    margin-left: 10px;
+  }
+
+  .NavBar .MobileNavigation .Hamburger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+  .NavBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    opacity: 0.8;
+    margin-top: 0;
+    background-color: #181818;
+    /* border-top: 2px solid #8c1cd1; */
+  }
+  .NavBar nav ul li {
+    display: flex;
+    flex-grow: 1;
+    max-height: auto;
+    align-items: center;
+    margin-left: 60%;
+    transform-origin: center center;
+    text-align: right;
+  }
+
+  .NavBar {
+    top: 0;
+    opacity: 1;
+  }
+  .NavBar a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
