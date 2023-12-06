@@ -8,7 +8,7 @@ import ShareLink from "../UI/shareLink";
 const Results = () => {
 
     return (
-        <div className="flex flex-col items-center gap-5">
+        <div className="Results flex flex-col items-center gap-5">
             <h2 className="font-h2">
                 Název místnosti
             </h2>

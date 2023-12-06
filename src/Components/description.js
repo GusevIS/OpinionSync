@@ -92,7 +92,7 @@ const Description = () => {
         O nás
       </h2>
       <p className="small-text text-justify mx-44 mt-5">
-          qwe
+        Tento projekt byl vytvořen v rámci předmětu "Internetové technologie".
       </p>
     </div>
 

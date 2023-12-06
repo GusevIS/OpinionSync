@@ -70,11 +70,36 @@
   font-size: 2rem;
 }
 
-
-
 .small-text {
   font-family: 'Sen', sans-serif;
   color: #0A2440;
   font-weight: normal;
   font-size: 1rem;
+}
+
+.div {
+  overflow-x: auto;
+  width: 100%;
+  white-space: nowrap
+}
+
+.Results {
+  width: 100%;
+  /* Уберем white-space: nowrap; */
+  white-space: normal;
+  /* Установим перенос слов для блока */
+  word-wrap: break-word;
+  overflow-x: auto;
+
+  /* Добавим стили для меньших экранов */
+  @media screen and (max-width: 768px) {
+    /* Изменяем отображение для меньших экранов */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Убираем горизонтальную прокрутку на меньших экранах */
+    overflow-x: hidden;
+    /* Устанавливаем ширину обратно на автоматическую */
+    width: auto;
+  }
 }

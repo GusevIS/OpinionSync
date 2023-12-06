@@ -12,7 +12,7 @@ import OutlinedButtonBlack from "./buttons/outlinedButtonBlack";
 const Rooms = () => {
   return (
     <Card>
-      <Container className=" ">
+      <Container>
         <Row>
           <Col md={20}>
             <Form className="d-flex mt-3 mb-5">
