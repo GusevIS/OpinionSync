@@ -16,14 +16,12 @@ const Discussion = () => {
 
             <div className= "">
                 <AccessAlarmIcon fontSize="large" ></AccessAlarmIcon>
-                <TextField type="text" label="" variant="outlined" defaultValue="10m:00s" style={{textAlign: 'center'}} InputProps={{
-                    readOnly: true,
-                }} />
+                10m:00s
             </div>
         </div>
 
 
-        <Card>
+
 
             <Card>
                 User 1
@@ -34,7 +32,7 @@ const Discussion = () => {
                     {}
                 </ContainedButton>
             </Card>
-
+            <Card>
                 <Card>
                     User 2
                     <BasicTextFields label="This is my opinion..." customWidth="416px" customHeight="58px">
@@ -45,15 +43,19 @@ const Discussion = () => {
                         </ContainedButton>
                 </Card>
 
-                <Card>
-                    User 3
-                    <BasicTextFields label="This is my opinion..." customWidth="416px" customHeight="58px">
-                        {}
-                    </BasicTextFields>
-                    <ContainedButton buttonText="Responde" to="/discussion" customWidth="130px" customHeight="38px">
-                        {}
-                    </ContainedButton>
-                </Card>
+
+
+            <Card>
+                <div className = "">
+                User 3
+                <BasicTextFields label="This is my opinion..." customWidth="300px" customHeight="58px">
+                    {}
+                </BasicTextFields>
+                <ContainedButton buttonText="Responde" to="/discussion" customWidth="130px" customHeight="38px">
+                    {}
+                </ContainedButton>
+                </div>
+            </Card>
         </Card>
         </>
     );
