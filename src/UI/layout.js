@@ -1,14 +1,16 @@
 import React from "react";
-import Header from "./header";
+import Header from "./Menu/header";
 import Footer from "./footer";
 import "../styles/Layout.css";
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout sm:w-1/2">
+    <div className="flex flex-col ">
       <Header className="mt-0" />
-      <main className="flex-grow">{children}</main>
-      <Footer />
+      <div className="layout sm:w-1/2 mt-20">
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </div>
     </div>
   );
 };
