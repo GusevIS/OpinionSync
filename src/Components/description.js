@@ -5,88 +5,12 @@ const Description = () => {
         Popis funkčnosti
       </h2>
       <p className="small-text text-justify mx-44 mt-5">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-        mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-        voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-        fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-        accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-        molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-        officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-        nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-        error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis
-        modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias.
-        Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum
-        debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae
-        fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt
-        excepturi expedita sint? Sed quibusdam recusandae aliasImpedit sit sunt
-        quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.
-        Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium
-        molestias eos sapiente officiis modi at sunt excepturi expedita sint?
-        Sed quibusdam recusandae aliasImpedit sit sunt quaerat, odit, tenetur
-        error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
-        Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-        officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae
-        aliasImpedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum
-        debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae
-        fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt
-        excepturi expedita sint? Sed quibusdam recusandae aliasImpedit sit sunt
-        quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.
-        Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium
-        molestias eos sapiente officiis modi at sunt excepturi expedita sint?
-        Sed quibusdam recusandae alias. is modi at sunt excepturi expedita sint?
-        Sed quibusdam recusandae aliasImpedit sit sunt quaerat, odit, tenetur
-        error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
-        Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-        officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae
-        aliasImpedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum
-        debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae
-        fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt
-        excepturi expedita sint? Sed quibusdam recusandae aliasImpedit sit sunt
-        quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.
-        Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium
-        molestias eos sapiente officiis modi at sunt excepturi expedita sint?
-        Sed quibusdam recusandae aliasis modi at sunt excepturi expedita sint?
-        Sed quibusdam recusandae aliasImpedit sit sunt quaerat, odit, tenetur
-        error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
-        Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-        officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae
-        aliasImpedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum
-        debitis quas. quibusdam recusandae aliasImpedit sit sunt quaerat, odit,
-        tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-        quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-        sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-        recusandae aliasImpedit sit sunt quaerat, odit, tenetur error, harum
-        nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-        error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis
-        modi at sunt excepturi expedita sint? Sed quibusdam recusandae
-        aliasImpedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum
-        debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae
-        fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt
-        excepturi expedita sint? Sed quibusdam recusandae aliasis modi at sunt
-        excepturi expedita sint? Sed quibusdam recusandae aliasImpedit sit sunt
-        quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.
-        Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium
-        molestias eos sapiente officiis modi at sunt excepturi expedita sint?
-        Sed quibusdam recusandae aliasImpedit sit sunt quaerat, odit, tenetur
-        error, harum nesciunt ipsum debitis quas.quibusdam recusandae
-        aliasImpedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum
-        debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae
-        fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt
-        excepturi expedita sint? Sed quibusdam recusandae aliasImpedit sit sunt
-        quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas aliquid.
-        Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium
-        molestias eos sapiente officiis modi at sunt excepturi expedita sint?
-        Sed quibusdam recusandae aliasImpedit sit sunt quaerat, odit, tenetur
-        error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit, quia.
-        Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-        officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae
-        aliasis modi at sunt excepturi expedita sint? Sed quibusdam recusandae
-        aliasImpedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum
-        debitis quas aliquid. Reprehenderit, quia. Quo neque error repudiandae
-        fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt
-        excepturi expedita sint? Sed quibusdam recusandae aliasImpedit sit sunt
-        quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas.
+        Vždy Vás bavilo sdílet a diskutovat nad různými názory ať už se svými přáteli nebo s úplnými cizinci? To nás také!
+        Proto jsme vytvořili tuto platformu - platformu, kde můžete diskutovat s kýmkoli jen budete chtít! Jak to celé funguje?
       </p>
+        <p className="small-text text-justify mx-44 mt-5">
+            Jednodušše vytvořte svou vlastní místnost s otázkami nebo zadejte kód, který Vám někdo poslal. No a to je vše! Užijte si diskuzi s ostatními a hlavně nezapoměnte být slušní. Děkujeme!
+        </p>
 
       <h2 id="about_us" className="font-h2 mb-2 mt-20" >
         O nás
