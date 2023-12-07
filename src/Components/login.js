@@ -20,25 +20,46 @@ const LoginForm = () => {
   };
 
   return (
-      <Card>
-        <div className="flex flex-col gap-2">
-          <BasicTextFields label="email" customWidth="416px" customHeight="56px">
-            {}
-          </BasicTextFields>
-          <BasicTextFields label="password" customWidth="416px" customHeight="56px">
-            {}
-          </BasicTextFields>
+    <Card>
+      <div className="flex flex-col gap-2">
+        <BasicTextFields
+          label="email"
+          className="w-96 md:w-[416px]"
+          // customWidth="416px"
+          customHeight="56px"
+        >
+          {}
+        </BasicTextFields>
+        <BasicTextFields
+          label="password"
+          className="w-96 md:w-[416px]"
+          // customWidth="416px"
+          customHeight="56px"
+        >
+          {}
+        </BasicTextFields>
 
-          <ContainedButton
-              // onClick={handleLogin} - future feature
-              buttonText="Log in" to="/account" customWidth="416px" customHeight="56px">
-            {}
-          </ContainedButton>
-          <ContainedButton buttonText="Sign up" to="/registration" customWidth="416px" customHeight="56px">
-            {}
-          </ContainedButton>
-        </div>
-      </Card>
+        <ContainedButton
+          // onClick={handleLogin} - future feature
+          buttonText="Log in"
+          to="/account"
+          className="w-96 md:w-[416px]"
+          // customWidth="416px"
+          customHeight="56px"
+        >
+          {}
+        </ContainedButton>
+        <ContainedButton
+          buttonText="Sign up"
+          to="/registration"
+          className="w-96 md:w-[416px]"
+          // customWidth="416px"
+          customHeight="56px"
+        >
+          {}
+        </ContainedButton>
+      </div>
+    </Card>
   );
 };
 

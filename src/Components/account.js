@@ -19,19 +19,22 @@ const Account = () => {
         </div>
 
         <div className="flex flex-col gap-1">
-          <p className="default-text text-center">
-            Username
-          </p>
-          <p className="default-text text-center">
-            Email
-          </p>
-
+          <p className="default-text text-center">Username</p>
+          <p className="default-text text-center">Email</p>
         </div>
-        <div className="mt-3 flex flex-row gap-2">
-          <PrimaryButtons buttonText="Change name" customWidth="244px" customHeight="64px">
+        <div className="mt-3 flex md:flex-row gap-2 flex-col">
+          <PrimaryButtons
+            buttonText="Change email"
+            customWidth="244px"
+            customHeight="64px"
+          >
             {}
           </PrimaryButtons>
-          <PrimaryButtons buttonText="Change email" customWidth="244px" customHeight="64px">
+          <PrimaryButtons
+            buttonText="Change password"
+            customWidth="244px"
+            customHeight="64px"
+          >
             {}
           </PrimaryButtons>
         </div>
