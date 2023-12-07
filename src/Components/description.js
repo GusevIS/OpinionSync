@@ -1,7 +1,7 @@
 const Description = () => {
   return (
-    <div className="flex  items-center flex-col ">
-      <h2 class="font-h2 mb-2 mt-20">
+    <div className="flex  items-center flex-col">
+      <h2 class="font-h2 mb-2 mt-19">
         Popis funkčnosti
       </h2>
       <p className="small-text text-justify mx-44 mt-5">
