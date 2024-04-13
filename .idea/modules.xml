@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/OpinionSync.iml" filepath="$PROJECT_DIR$/.idea/OpinionSync.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Server-side-frontend.iml" filepath="$PROJECT_DIR$/.idea/Server-side-frontend.iml" />
     </modules>
   </component>
 </project>
