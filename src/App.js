@@ -15,7 +15,7 @@ import ErrorPage from "./Components/errorPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename={'/zs2324/01/Jusko/build'}>
       <div className="app-global">
         <Layout>
           <Routes>

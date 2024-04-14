@@ -13,23 +13,20 @@ const Registration = () => {
 
     const handleRegistration = (e) => {
         e.preventDefault();
-        axios.post('/OpinionSyncBackend/registration.php', { name, email, password })
+        axios.post('http://localhost/zs2324/01/Jusko/OpinionSyncBackend/registration.php', { name, email, password })
+        // axios.post('http://localhost/OpinionSyncBackend/registration.php', { name, email, password })
             .then(response => {
                     // Handle successful registration
-                    console.log("Registration successful:", response.data);
-
+                    console.log("Registrace byla úspěšná:", response.data);
                     // 1. Show confirmation message to the user
-                    alert("Registration successful. You can now log in.");
-
-                    // 2. Redirect the user to the login page
-                    // Replace "/login" with the actual URL of your login page
+                    alert("Registrace byla úspěšná. Můžete se přihlásit.");
                     window.location.href = "/login";
                 })
 
             .catch(error => {
                 // Handle registration error
-                console.error("Registration failed:", error);
-                setRegistrationError("Registration failed. Please try again.");
+                console.error("Registrace neproběhla, zkuste to prosím znovu:", error);
+                setRegistrationError("Registrace neproběhla, zkuste to prosím znovu.");
             });
     };
 
