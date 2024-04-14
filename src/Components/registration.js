@@ -13,7 +13,7 @@ const Registration = () => {
 
     const handleRegistration = (e) => {
         e.preventDefault();
-        axios.post('registration.php', { name, email, password })
+        axios.post('/OpinionSyncBackend/registration.php', { name, email, password })
             .then(response => {
                     // Handle successful registration
                     console.log("Registration successful:", response.data);
