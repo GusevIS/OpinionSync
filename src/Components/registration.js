@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
-
 import Card from "../UI/card";
 import BasicTextFields from "./textFields/outlinedTextField";
 import ContainedButton from "./buttons/containedButton";
@@ -11,24 +9,42 @@ const Registration = () => {
     const [password, setPassword] = useState("");
     const [registrationError, setRegistrationError] = useState(null);
 
-    const handleRegistration = (e) => {
+    const handleRegistration = async (e) => {
         e.preventDefault();
-        axios.post('http://localhost/zs2324/01/Jusko/OpinionSyncBackend/registration.php', { name, email, password })
-        // axios.post('http://localhost/OpinionSyncBackend/registration.php', { name, email, password })
-            .then(response => {
-                    // Handle successful registration
-                    console.log("Registrace byla úspěšná:", response.data);
-                    // 1. Show confirmation message to the user
-                    alert("Registrace byla úspěšná. Můžete se přihlásit.");
-                    window.location.href = "/login";
-                })
 
-            .catch(error => {
-                // Handle registration error
-                console.error("Registrace neproběhla, zkuste to prosím znovu:", error);
-                setRegistrationError("Registrace neproběhla, zkuste to prosím znovu.");
-            });
+        // Capture the current state values
+        const nameValue = name;
+        const emailValue = email;
+        const passwordValue = password;
+
+        console.log("Captured values:", { name: nameValue, email: emailValue, password: passwordValue });
+
+
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: nameValue, email: emailValue, password: passwordValue })
+        };
+
+        try {
+            const response = await fetch('http://localhost/OpinionSyncBackend/registration.php', requestOptions);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            // Handle successful registration
+            console.log("Registrace byla úspěšná:", data);
+            // Show confirmation message to the user
+            alert("Registrace byla úspěšná. Můžete se přihlásit.");
+            // Redirect to login page
+            window.location.href = "/login";
+        } catch (error) {
+            // Handle registration error
+            console.error("Registrace neproběhla, zkuste to prosím znovu:", error);
+            setRegistrationError("Registrace neproběhla, zkuste to prosím znovu.");
+        }
     };
+
 
     return (
         <Card>
