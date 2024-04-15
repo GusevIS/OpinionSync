@@ -12,22 +12,23 @@ const Registration = () => {
     const handleRegistration = async (e) => {
         e.preventDefault();
 
-        // Capture the current state values
+        /*used for debbuging*/
         const nameValue = name;
         const emailValue = email;
         const passwordValue = password;
 
-        console.log("Captured values:", { name: nameValue, email: emailValue, password: passwordValue });
+        // // console.log("Captured values:", { name: nameValue, email: emailValue, password: passwordValue });
 
 
         const requestOptions = {
             method: 'POST',
+            mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name: nameValue, email: emailValue, password: passwordValue })
         };
 
         try {
-            const response = await fetch('http://localhost/OpinionSyncBackend/registration.php', requestOptions);
+            const response = await fetch('https://ete32e.pef.czu.cz/zs2324/01/Jusko/OpinionSyncBackend/registration.php', requestOptions);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }

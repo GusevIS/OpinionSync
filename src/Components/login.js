@@ -13,12 +13,13 @@ const LoginForm = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     // Send login request to backend
-    axios.post('http://localhost/zs2324/01/Jusko/OpinionSyncBackend/login.php', { email, password })
+    // axios.post('http://localhost/zs2324/01/Jusko/OpinionSyncBackend/login.php', { email, password })
+    axios.post('https://ete32e.pef.czu.cz/zs2324/01/Jusko/OpinionSyncBackend/login.php', { email, password })
         .then(response => {
           // Handle successful login
           console.log("Login successful:", response.data);
           // Redirect to account page or perform other actions
-          window.location.href = "/account";
+          window.location.href = "/zs2324/01/Jusko/build/account";
         })
         .catch(error => {
           // Handle login error
